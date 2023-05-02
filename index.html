@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">YIMO电影</h1>
+            </div>
+            <div class="search-container">
+                <form id="form" role="search" action="">
+                    <input type="search" id="query" name="q" placeholder="Search..."
+                        aria-label="Search through site content">
+                    <button>
+                        <i class="button-set fa-brands fa-searchengin"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/头像.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text"></span>
+                    <i class="fa-solid fa-caret-down" onclick="toggleDropdown()"></i>
+                    <ul id="dropdown" class="dropdown">
+                        <li class="dropdown-item" onclick="window.location.href='www.bing.com'">个人资料</li>
+                        <li class="dropdown-item" onclick="window.location.href='www.bing.com'">观看历史</li>
+                        <li class="dropdown-item" onclick="window.location.href='www.bing.com'">收藏</li>
+                        <li class="dropdown-item" onclick="window.location.href='login.html'">登出</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-house" onclick="goHome()"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="container main">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background:linear-gradient(to bottom, rgba(0,0,0,0),#151515), url('img/bg1.jpg');">
+                <img class="featured-title" src="img/logo.png" alt="">
+                <p class="featured-desc">
+                    您好，欢迎来到YIMO电影网站，这里有您喜爱的各种电影，从经典到最新，从喜剧到惊悚，应有尽有。您可以在首页浏览我们的精选内容，或者在电影、系列、流行和待定栏目中查找您感兴趣的电影。您也可以使用搜索功能来快速找到您想看的电影。我们希望您能在这里享受一段美好的观影时光。😊
+                </p>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">2023年最新电影</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">2023年最新电影</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">2023年最新电影</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">2023年最新电影</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/流浪地球.jpg" alt="">
+                            <span class="movie-list-item-title">流浪地球</span>
+                            <p class="movie-list-item-desc">
+                                《流浪地球2》是一部科幻电影，讲述了人类为了逃离太阳的毁灭，推动地球在宇宙中寻找新家园的故事。这部电影充满了惊险和刺激，展示了人类的生存意志和家园情感。
+                            </p>
+                            <button class="movie-list-item-button">立即观看</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

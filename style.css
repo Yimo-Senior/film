@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+    top: 0px;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding:0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    
+    font-size: 30px;
+    color: #4bdf00;
+}
+
+.search-container{
+    flex: 3;
+    display: flex;
+    list-style: none;
+}
+
+#query { 
+    width: 300px; 
+    height: 30px;
+    border: none; 
+    border-radius: 20px; 
+    box-shadow: inset 0 0 5px #ccc; 
+}
+
+button { 
+    width: 60px;
+    height: 30px;
+    background-color: #4bdf00; 
+    border: none; 
+    border-radius: 20px; 
+    box-shadow: 0 0 5px #ccc; 
+    background-image: linear-gradient(to right, #4bdf00, #00ff00); 
+}
+
+.fa-search { 
+    color: white; font-size: 18px; 
+}
+
+.button-set{
+    color: white;
+    font-size: 20px;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 设置下拉列表的初始样式 */ 
+.dropdown { 
+    position: absolute;
+    top: 100%;
+    right: 50px;
+    list-style: none; 
+    background-color: #333; 
+    color: white; 
+    border-radius: 10px; 
+    padding: 10px; 
+    display: none; /* 隐藏下拉列表 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 2px solid white;
+}
+
+/* 设置下拉列表的悬停效果 */ 
+.dropdown:hover { 
+    box-shadow: 0 0 5px #ccc; 
+}
+
+/* 设置下拉列表项的样式 */ 
+.dropdown-item { 
+    margin: 5px; 
+    cursor: pointer; 
+}
+
+/* 设置下拉列表项的悬停效果 */ 
+.dropdown-item:hover { 
+    background-color: #4bdf00; 
+}
+
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.left-menu-icon{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 40px;
+}
+
+.left-menu-icon:hover { 
+    transform: translateY(-10px); 
+}
+
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+}
+
+.main{
+    margin-top: 50px;
+}
+
+.content-container{
+    margin-left: 50px;
+}
+
+.featured-content{
+    height: 50vh;
+    padding: 50px;
+}
+
+.featured-title{
+    width: 200px;
+}
+
+.featured-desc{
+    width: 500px;
+    color: lightgray;
+    margin: 50px 0;
+}
+
+.movie-list-container{
+    padding: 0 20px;
+    color: lightgray;
+}
+
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item{
+    margin-right: 20px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+    transition: 1s all ease-in-out;
+}
+
+
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.movie-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 50px;
+    opacity: 0;
+}
+
+.movie-list-item-desc{
+    background-color: #333;
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 23%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+}
+
+.movie-list-item-button{
+    padding: 10px;background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+}
+
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    color: lightgray;
+    opacity: .5;
+    cursor: pointer;
+}
